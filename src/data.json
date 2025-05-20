@@ -1,0 +1,48 @@
+{
+  "Businesses": [
+    {
+      "imageSrc": "https://myneighborhoodnews.com/uploads/images/News/March_2024/pollo_campero_formatted.jpg",
+      "name": "Pollo Campero",
+      "address": "11470 Cherry Hill Rd",
+      "city": "Silver Spring",
+      "state": "MD",
+      "zipcode": "20904",
+      "category": "Fried Chicken",
+      "rating": 4.5,
+      "reviewCount": 76
+    },
+    {
+      "imageSrc": "https://myneighborhoodnews.com/uploads/images/News/March_2024/pollo_campero_formatted.jpg",
+      "name": "Chic Fil A",
+      "address": "742 Maplewood Drive",
+      "city": "Brookhaven",
+      "state": "IL",
+      "zipcode": "60510",
+      "category": "Fried Chicken",
+      "rating": 4.9,
+      "reviewCount": 23
+    },
+    {
+      "imageSrc": "https://myneighborhoodnews.com/uploads/images/News/March_2024/pollo_campero_formatted.jpg",
+      "name": "Popeyes",
+      "address": "1185 Oceanview Terrace",
+      "city": "Santa Mira",
+      "state": "CA",
+      "zipcode": "93450",
+      "category": "Fried Chicken",
+      "rating": 3.5,
+      "reviewCount": 109
+    },
+    {
+      "imageSrc": "https://myneighborhoodnews.com/uploads/images/News/March_2024/pollo_campero_formatted.jpg",
+      "name": "Jollie Bee",
+      "address": "39 Hollow Pine Lane",
+      "city": "Fairhill",
+      "state": "VT",
+      "zipcode": "05673",
+      "category": "Fried Chicken",
+      "rating": 5.0,
+      "reviewCount": 98
+    }
+  ]
+}

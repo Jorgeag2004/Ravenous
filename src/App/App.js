@@ -1,13 +1,15 @@
 import './App.css';
 import SearchArea from "../SearchArea/searchArea";
-import CardGrid from "../CardGrid/CardGrid";
+import CardList from "../CardList/CardList";
+import Businesses from "../businessData";
+import Container from "react-bootstrap/Container";
 
 function App() {
     return (
-        <div className="min-vh-100 bg-dark">
+        <Container className="bg-dark text-light min-vh-100" >
             <SearchArea />
-            <CardGrid />
-        </div>
+            <CardList businesses={Businesses} />
+        </Container>
     );
 }
 

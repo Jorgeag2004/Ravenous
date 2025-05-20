@@ -1,4 +1,3 @@
-import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar';
 import Container from "react-bootstrap/Container";
 import Button from 'react-bootstrap/Button';
@@ -11,7 +10,7 @@ function SearchArea() {
             <Container>
                 <Navbar.Brand>Ravenous</Navbar.Brand>
                 <InputGroup>
-                    <InputGroup.Text>Cusine</InputGroup.Text>
+                    <InputGroup.Text>Cuisine</InputGroup.Text>
                     <Form.Control></Form.Control>
                     <InputGroup.Text>Location</InputGroup.Text>
                     <Form.Control></Form.Control>
