@@ -6,10 +6,10 @@ import Container from "react-bootstrap/Container";
 
 function App() {
     return (
-        <Container className="bg-dark text-light min-vh-100" >
+        <div className="bg-black h-100 w-100">
             <SearchArea />
             <CardList businesses={Businesses} />
-        </Container>
+        </div>
     );
 }
 

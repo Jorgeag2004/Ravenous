@@ -6,8 +6,8 @@ import InputGroup from 'react-bootstrap/InputGroup';
 
 function SearchArea() {
     return (
-        <Navbar bg="secondary" variant="dark">
-            <Container>
+        <Navbar bg="secondary" variant="dark" className="w-100">
+            <Container >
                 <Navbar.Brand>Ravenous</Navbar.Brand>
                 <InputGroup>
                     <InputGroup.Text>Cuisine</InputGroup.Text>
