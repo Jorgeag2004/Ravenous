@@ -1,5 +1,5 @@
 import './App.css';
-import SearchArea from "../SearchArea/searchArea";
+import SearchArea from "../SearchArea/SearchArea";
 import CardList from "../CardList/CardList";
 import Businesses from "../businessData";
 import Container from "react-bootstrap/Container";

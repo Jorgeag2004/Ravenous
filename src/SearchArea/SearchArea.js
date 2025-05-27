@@ -4,9 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Stack from 'react-bootstrap/Stack';
-import ToggleButttonGroup from 'react-bootstrap/ToggleButtonGroup';
-import ToggleButton from 'react-bootstrap/ToggleButton';
-import {ToggleButtonGroup} from "react-bootstrap";
+import SearchPreferenceToggle from './SearchPreferenceToggle';
 
 function SearchArea() {
     return (
@@ -23,11 +21,7 @@ function SearchArea() {
                       </InputGroup>
                   </Container>
                   <Container className={"bg-secondary d-flex justify-content-center align-items-center"}>
-                      <ToggleButtonGroup type={"checkbox"} name={"Search Options"}>
-                         <ToggleButton value={1}>Best Match</ToggleButton>
-                          <ToggleButton value={2}>Highest Rated</ToggleButton>
-                          <ToggleButton value={3}>Most Reviewed</ToggleButton>
-                      </ToggleButtonGroup>
+                      <SearchPreferenceToggle />
                   </Container>
               </Stack>
            </Navbar>
