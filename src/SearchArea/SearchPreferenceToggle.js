@@ -1,9 +1,9 @@
 import ToggleButton from 'react-bootstrap/ToggleButton';
 import {ToggleButtonGroup} from "react-bootstrap";
 
-function SearchPreferenceToggle() {
+function SearchPreferenceToggle(props) {
   return (
-      <ToggleButtonGroup type={"radio"} name={"Search Preferences"} defaultValue={1}>
+      <ToggleButtonGroup onChange={props.handleSortingChoice} type={"radio"} name={"Search Preferences"} defaultValue={1}>
           <ToggleButton id={"radio-1"} value={1}>
               Best Match
           </ToggleButton>
