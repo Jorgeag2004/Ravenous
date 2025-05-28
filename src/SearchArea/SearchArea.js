@@ -27,9 +27,9 @@ function SearchArea() {
         setSortingChoice(value);
    }
 
-   useEffect(() => {
-       console.log(sortingChoice);
-   }, [sortingChoice]);
+   const handleEnter = (event) => {
+       console.log(`Searching YELP with ${searchInput}, ${location}, ${sortingChoice}`);
+   }
 
     return (
            <Navbar bg="secondary" variant="dark" className="w-100">
@@ -41,7 +41,7 @@ function SearchArea() {
                           <Form.Control onChange={handleSearchInputChange}></Form.Control>
                           <InputGroup.Text style={{backgroundColor: 'darkgrey'}}>Location</InputGroup.Text>
                           <Form.Control onChange={handleLocationInputChange}></Form.Control>
-                          <Button variant="dark" size="sm">Enter</Button>
+                          <Button variant="dark" size="sm" onClick={handleEnter}>Enter</Button>
                       </InputGroup>
                   </Container>
                   <Container className={"bg-secondary d-flex justify-content-center align-items-center"}>
