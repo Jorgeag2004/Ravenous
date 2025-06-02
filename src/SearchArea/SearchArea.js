@@ -6,14 +6,15 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import Stack from 'react-bootstrap/Stack';
 import SearchPreferenceToggle from './SearchPreferenceToggle';
 import {useEffect, useState} from "react";
+import getBusiness from "../utils/yelpAPI";
 
-function SearchArea() {
+function SearchArea({setBusinesses}) {
 
    const [searchInput, setSearchInput] = useState('');
 
    const [location, setLocation] = useState('');
 
-   const [sortingChoice, setSortingChoice] = useState('');
+   const [sortingChoice, setSortingChoice] = useState('best_match');
 
    const handleSearchInputChange = (event) => {
        setSearchInput(event.target.value);
@@ -27,8 +28,9 @@ function SearchArea() {
         setSortingChoice(value);
    }
 
-   const handleEnter = (event) => {
-       console.log(`Searching YELP with ${searchInput}, ${location}, ${sortingChoice}`);
+   const handleEnter = async (event) => {
+       const businesses = await getBusiness(searchInput, location, sortingChoice);
+       setBusinesses(businesses);
    }
 
     return (

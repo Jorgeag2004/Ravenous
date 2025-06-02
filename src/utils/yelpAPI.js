@@ -34,7 +34,7 @@ const getBusiness = async (term, location, searchOpt) => {
         });
         if (response.ok) {
             const data = await response.json();
-            return data;
+            return data.businesses;
         }
         throw new Error(`Response Status: ${response.status}`);
     } catch (error) {
